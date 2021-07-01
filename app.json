@@ -4,7 +4,7 @@
     "publisher":  "Marcus Fabian",
     "brief":  "Get SWIFT (BIC) from IBAN via Web-Service",
     "description":  "Extension for Vendor Bank Account. Get SWIFT Code from IBAN",
-    "version":  "18.0.0.0",
+    "version":  "1.0.0.0",
     "privacyStatement":  "",
     "EULA":  "",
     "help":  "",
@@ -13,17 +13,15 @@
     "logo":  "",
     "dependencies":  [ ],
     "internalsVisibleTo":  [],
-    "screenshots":  [
-
-                    ],
+    "screenshots":  [ ],
+    "platform":  "1.0.0.0",
+    "application":  "1.0.0.0",
     "idRanges":  [
                      {
                          "from":  50200,
                          "to":  50299
                      }
                  ],
-    "platform":  "18.0.0.0",
-    "target":  "OnPrem",
-    "showMyCode":  false,
-    "application":  "18.1.0.0"
+    "showMyCode":  true,
+    "runtime": "7.0"
 }

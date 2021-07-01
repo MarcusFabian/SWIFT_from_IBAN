@@ -9,6 +9,8 @@ pageextension 50204 "Vendor Bank Account Ext SWIFT" extends "Vendor Bank Account
                 cuGetSWIFT: Codeunit "Get SWIFT from IBAN";
                 _LocalSWIFT: code[20];
             begin
+                // Developer note: 
+                // I recommend to call cuGetSWIFT with ( , false) during tests to get error messages
                 _LocalSWIFT := cuGetSWIFT.GetSWIFT(rec.IBAN, true);  // true=ignore all error messages
                 if (_LocalSWIFT <> '') and (_LocalSWIFT <> Rec."SWIFT Code") then begin
                     rec.Validate("SWIFT Code", _LocalSWIFT);

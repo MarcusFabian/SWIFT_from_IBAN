@@ -2,8 +2,8 @@
 
 For Business Central (all Versions)
 
-The purpose of this APP is to extend the Vendor Bank Account in a way that OnValidate() of the IBAN Number, the SWIFT Code is automatically
-determined and filled.
+The purpose of this APP is to extend the Vendor Bank Account in a way that VendorBankAccount.IBAN.OnValidate() 
+reads and fills the SWIFT Code automatically.
 
 For this purpose we use a Web-Service from https://openiban.com/
 
